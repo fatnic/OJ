@@ -1,0 +1,24 @@
+Things to do:
+
+Light class
+  - position
+  - colour (brightness)
+  - type (attenuated, spot, global...)
+
+Terrain
+  - heightmap
+  - chunks
+
+
+
+
+
+class light ...
+  - colour
+  - position/direction
+
+class AttenuatedLight : public Light
+  -attenuation
+
+  class SpotLight : public Light
+  - radius

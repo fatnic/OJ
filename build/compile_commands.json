@@ -1,0 +1,52 @@
+[
+{
+  "directory": "/home/dave/Projects/OJ/build",
+  "command": "/usr/bin/c++    -I/home/dave/Projects/OJ/include -I/home/dave/Projects/OJ/ext   -std=c++11   -o CMakeFiles/OJ.dir/src/mesh.cpp.o -c /home/dave/Projects/OJ/src/mesh.cpp",
+  "file": "/home/dave/Projects/OJ/src/mesh.cpp"
+},
+{
+  "directory": "/home/dave/Projects/OJ/build",
+  "command": "/usr/bin/c++    -I/home/dave/Projects/OJ/include -I/home/dave/Projects/OJ/ext   -std=c++11   -o CMakeFiles/OJ.dir/src/objloader.cpp.o -c /home/dave/Projects/OJ/src/objloader.cpp",
+  "file": "/home/dave/Projects/OJ/src/objloader.cpp"
+},
+{
+  "directory": "/home/dave/Projects/OJ/build",
+  "command": "/usr/bin/c++    -I/home/dave/Projects/OJ/include -I/home/dave/Projects/OJ/ext   -std=c++11   -o CMakeFiles/OJ.dir/src/window.cpp.o -c /home/dave/Projects/OJ/src/window.cpp",
+  "file": "/home/dave/Projects/OJ/src/window.cpp"
+},
+{
+  "directory": "/home/dave/Projects/OJ/build",
+  "command": "/usr/bin/c++    -I/home/dave/Projects/OJ/include -I/home/dave/Projects/OJ/ext   -std=c++11   -o CMakeFiles/OJ.dir/src/renderer.cpp.o -c /home/dave/Projects/OJ/src/renderer.cpp",
+  "file": "/home/dave/Projects/OJ/src/renderer.cpp"
+},
+{
+  "directory": "/home/dave/Projects/OJ/build",
+  "command": "/usr/bin/c++    -I/home/dave/Projects/OJ/include -I/home/dave/Projects/OJ/ext   -std=c++11   -o CMakeFiles/OJ.dir/src/shader.cpp.o -c /home/dave/Projects/OJ/src/shader.cpp",
+  "file": "/home/dave/Projects/OJ/src/shader.cpp"
+},
+{
+  "directory": "/home/dave/Projects/OJ/build",
+  "command": "/usr/bin/c++    -I/home/dave/Projects/OJ/include -I/home/dave/Projects/OJ/ext   -std=c++11   -o CMakeFiles/OJ.dir/src/transform.cpp.o -c /home/dave/Projects/OJ/src/transform.cpp",
+  "file": "/home/dave/Projects/OJ/src/transform.cpp"
+},
+{
+  "directory": "/home/dave/Projects/OJ/build",
+  "command": "/usr/bin/c++    -I/home/dave/Projects/OJ/include -I/home/dave/Projects/OJ/ext   -std=c++11   -o CMakeFiles/OJ.dir/src/model.cpp.o -c /home/dave/Projects/OJ/src/model.cpp",
+  "file": "/home/dave/Projects/OJ/src/model.cpp"
+},
+{
+  "directory": "/home/dave/Projects/OJ/build",
+  "command": "/usr/bin/c++    -I/home/dave/Projects/OJ/include -I/home/dave/Projects/OJ/ext   -std=c++11   -o CMakeFiles/OJ.dir/src/texture2d.cpp.o -c /home/dave/Projects/OJ/src/texture2d.cpp",
+  "file": "/home/dave/Projects/OJ/src/texture2d.cpp"
+},
+{
+  "directory": "/home/dave/Projects/OJ/build",
+  "command": "/usr/bin/c++    -I/home/dave/Projects/OJ/include -I/home/dave/Projects/OJ/ext   -std=c++11   -o CMakeFiles/OJ.dir/src/camera.cpp.o -c /home/dave/Projects/OJ/src/camera.cpp",
+  "file": "/home/dave/Projects/OJ/src/camera.cpp"
+},
+{
+  "directory": "/home/dave/Projects/OJ/build",
+  "command": "/usr/bin/c++    -I/home/dave/Projects/OJ/include -I/home/dave/Projects/OJ/ext   -std=c++11   -o CMakeFiles/OJ.dir/src/main.cpp.o -c /home/dave/Projects/OJ/src/main.cpp",
+  "file": "/home/dave/Projects/OJ/src/main.cpp"
+}
+]
