@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="app" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/dave/Projects/OJ/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/dave/Projects/OJ/build/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/dave/Projects/OJ/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/dave/Projects/OJ/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/dave/Projects/OJ/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/dave/Projects/OJ/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/dave/Projects/OJ/build/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/dave/Projects/OJ/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/dave/Projects/OJ/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/dave/Projects/OJ/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/home/dave/Projects/OJ/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/dave/Projects/OJ/build/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/dave/Projects/OJ/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/dave/Projects/OJ/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/dave/Projects/OJ/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="app">
+         <Option output="/home/dave/Projects/OJ/build/app" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/dave/Projects/OJ/build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/dave/Projects/OJ/ext" />
+            <Add directory="/home/dave/Projects/OJ/oj" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/dave/Projects/OJ/build/Makefile&quot;  VERBOSE=1 app" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/dave/Projects/OJ/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/dave/Projects/OJ/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/dave/Projects/OJ/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="app/fast">
+         <Option output="/home/dave/Projects/OJ/build/app" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/dave/Projects/OJ/build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/dave/Projects/OJ/ext" />
+            <Add directory="/home/dave/Projects/OJ/oj" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/dave/Projects/OJ/build/Makefile&quot;  VERBOSE=1 app/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/dave/Projects/OJ/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/dave/Projects/OJ/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/dave/Projects/OJ/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/graphics/buffer.cpp">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/graphics/buffer.h">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/graphics/indexbuffer.cpp">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/graphics/indexbuffer.h">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/graphics/mesh.cpp">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/graphics/mesh.h">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/graphics/model.cpp">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/graphics/model.h">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/graphics/renderers/renderer.cpp">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/graphics/renderers/renderer.h">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/graphics/texture/texture2d.cpp">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/graphics/texture/texture2d.h">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/graphics/vertexarray.cpp">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/graphics/vertexarray.h">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/main.cpp">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/system/inputmanager.cpp">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/system/inputmanager.h">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/system/window.cpp">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/system/window.h">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/utils/camera.cpp">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/utils/camera.h">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/utils/objloader.cpp">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/utils/objloader.h">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/utils/shader.cpp">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/utils/shader.h">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/utils/transform.cpp">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/utils/transform.h">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

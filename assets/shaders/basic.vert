@@ -8,8 +8,6 @@ uniform mat4 projection;
 uniform mat4 view;
 uniform mat4 model;
 
-uniform vec3 lightPosition;
-
 out vec2 TexCoords;
 out vec3 surfaceNormal;
 out vec3 fragPosition;

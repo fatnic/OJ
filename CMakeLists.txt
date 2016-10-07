@@ -1,13 +1,13 @@
 cmake_minimum_required(VERSION 2.8)
-project(OJ)
+project(app)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
 
-include_directories(include ext)
+include_directories(oj ext)
 
 #set(SOURCES main.cpp)
-file(GLOB SOURCES "src/*.cpp")
+file(GLOB_RECURSE SOURCES oj/*.cpp)
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 
