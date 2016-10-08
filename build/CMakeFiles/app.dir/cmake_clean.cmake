@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/app.dir/oj/jelly/utils/transform.cpp.o"
   "CMakeFiles/app.dir/oj/jelly/utils/camera.cpp.o"
   "CMakeFiles/app.dir/oj/jelly/graphics/mesh.cpp.o"
+  "CMakeFiles/app.dir/oj/jelly/graphics/light.cpp.o"
   "CMakeFiles/app.dir/oj/jelly/graphics/indexbuffer.cpp.o"
   "CMakeFiles/app.dir/oj/jelly/graphics/buffer.cpp.o"
   "CMakeFiles/app.dir/oj/jelly/graphics/vertexarray.cpp.o"

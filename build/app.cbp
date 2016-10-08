@@ -100,6 +100,12 @@
       <Unit filename="/home/dave/Projects/OJ/oj/jelly/graphics/indexbuffer.h">
          <Option target="app"/>
       </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/graphics/light.cpp">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/graphics/light.h">
+         <Option target="app"/>
+      </Unit>
       <Unit filename="/home/dave/Projects/OJ/oj/jelly/graphics/mesh.cpp">
          <Option target="app"/>
       </Unit>

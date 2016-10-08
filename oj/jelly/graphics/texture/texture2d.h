@@ -9,8 +9,9 @@
 class Texture2D {
 public:
     GLuint id;
+    GLfloat shininess;
 
     Texture2D(std::string filename);
-    void bind();
+    void bind(int textureNum);
 
 };

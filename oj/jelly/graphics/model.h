@@ -16,6 +16,5 @@ public:
 
     std::vector<Texture2D*> textures;
     Mesh* mesh;
-//    Texture2D* texture;
     Shader* shader;
 };

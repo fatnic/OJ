@@ -31,6 +31,11 @@
 },
 {
   "directory": "/home/dave/Projects/OJ/build",
+  "command": "/usr/bin/c++    -I/home/dave/Projects/OJ/oj -I/home/dave/Projects/OJ/ext   -std=c++11 -g   -o CMakeFiles/app.dir/oj/jelly/graphics/light.cpp.o -c /home/dave/Projects/OJ/oj/jelly/graphics/light.cpp",
+  "file": "/home/dave/Projects/OJ/oj/jelly/graphics/light.cpp"
+},
+{
+  "directory": "/home/dave/Projects/OJ/build",
   "command": "/usr/bin/c++    -I/home/dave/Projects/OJ/oj -I/home/dave/Projects/OJ/ext   -std=c++11 -g   -o CMakeFiles/app.dir/oj/jelly/graphics/indexbuffer.cpp.o -c /home/dave/Projects/OJ/oj/jelly/graphics/indexbuffer.cpp",
   "file": "/home/dave/Projects/OJ/oj/jelly/graphics/indexbuffer.cpp"
 },

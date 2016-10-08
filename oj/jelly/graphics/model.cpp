@@ -18,6 +18,13 @@ Model::Model(std::string obj, std::string tex, std::string shaderVert, std::stri
 void Model::draw()
 {
     shader->use();
-    textures[0]->bind();
+
+    shader->setUniform("material.diffuse", 0);
+    shader->setUniform("material.shininess", textures[0]->shininess);
+    textures[0]->bind(0);
+
+    shader->setUniform("material.specular", 1);
+    textures[1]->bind(1);
+
     mesh->draw();
 }

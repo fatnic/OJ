@@ -13,6 +13,11 @@ void Renderer::addModel(Model *model)
     _models.push_back(model);
 }
 
+void Renderer::addLight(Light *light)
+{
+    _lights.push_back(light);
+}
+
 void Renderer::draw()
 {
     _view = _camera->getView();
@@ -21,6 +26,14 @@ void Renderer::draw()
 
     for (Model* model : _models)
     {
+        for(int i = 0; i < _lights.size(); i++)
+        {
+            model->shader->setUniform("light.position", _lights[i]->position);
+            model->shader->setUniform("light.ambient",  _lights[i]->ambient);
+            model->shader->setUniform("light.diffuse",  _lights[i]->diffuse);
+            model->shader->setUniform("light.specular", _lights[i]->specular);
+        }
+
         model->shader->setUniform("projection", &_projection);
         model->shader->setUniform("view", &_view);
         model->shader->setUniform("model", &model->mesh->transform);

@@ -97,6 +97,14 @@ void Shader::setUniform(const char* name, glm::vec3 value)
     glUniform3f(uniformLocation, value.x, value.y, value.z);
 }
 
+void Shader::setUniform(const char* name, glm::vec4 value)
+{
+    this->use();
+    GLint uniformLocation = glGetUniformLocation(this->program, name);
+    glUniform4f(uniformLocation, value.x, value.y, value.z, value.w);
+}
+
+
 void Shader::setUniform(const char* name, GLfloat value)
 {
     this->use();

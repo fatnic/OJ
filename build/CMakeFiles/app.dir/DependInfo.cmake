@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/dave/Projects/OJ/oj/jelly/graphics/buffer.cpp" "/home/dave/Projects/OJ/build/CMakeFiles/app.dir/oj/jelly/graphics/buffer.cpp.o"
   "/home/dave/Projects/OJ/oj/jelly/graphics/indexbuffer.cpp" "/home/dave/Projects/OJ/build/CMakeFiles/app.dir/oj/jelly/graphics/indexbuffer.cpp.o"
+  "/home/dave/Projects/OJ/oj/jelly/graphics/light.cpp" "/home/dave/Projects/OJ/build/CMakeFiles/app.dir/oj/jelly/graphics/light.cpp.o"
   "/home/dave/Projects/OJ/oj/jelly/graphics/mesh.cpp" "/home/dave/Projects/OJ/build/CMakeFiles/app.dir/oj/jelly/graphics/mesh.cpp.o"
   "/home/dave/Projects/OJ/oj/jelly/graphics/model.cpp" "/home/dave/Projects/OJ/build/CMakeFiles/app.dir/oj/jelly/graphics/model.cpp.o"
   "/home/dave/Projects/OJ/oj/jelly/graphics/renderers/renderer.cpp" "/home/dave/Projects/OJ/build/CMakeFiles/app.dir/oj/jelly/graphics/renderers/renderer.cpp.o"

@@ -1,7 +1,8 @@
 #include <jelly/graphics/texture/texture2d.h>
 
 Texture2D::Texture2D(std::string filename)
-  : id()
+  : id(),
+    shininess(52.0f)
 {
   int width, height, c;
   unsigned char* texImage = stbi_load(filename.c_str(), &width, &height, &c, STBI_rgb);
@@ -20,8 +21,9 @@ Texture2D::Texture2D(std::string filename)
   stbi_image_free(texImage);
 }
 
-void Texture2D::bind()
+void Texture2D::bind(int textureNum = 0)
 {
+  glActiveTexture(GL_TEXTURE0 + textureNum);
   glBindTexture(GL_TEXTURE_2D, id);
 }
 

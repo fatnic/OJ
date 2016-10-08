@@ -816,6 +816,10 @@ GL/glew.h
 vector
 -
 
+../oj/jelly/graphics/light.h
+glm/glm.hpp
+-
+
 ../oj/jelly/graphics/mesh.h
 vector
 -
@@ -846,6 +850,8 @@ jelly/system/window.h
 jelly/utils/camera.h
 -
 jelly/graphics/model.h
+-
+jelly/graphics/light.h
 -
 
 ../oj/jelly/graphics/texture/texture2d.h
@@ -966,6 +972,10 @@ jelly/graphics/buffer.h
 jelly/graphics/indexbuffer.h
 /home/dave/Projects/OJ/oj/jelly/graphics/jelly/graphics/indexbuffer.h
 
+/home/dave/Projects/OJ/oj/jelly/graphics/light.cpp
+jelly/graphics/light.h
+-
+
 /home/dave/Projects/OJ/oj/jelly/graphics/mesh.cpp
 jelly/graphics/mesh.h
 -
@@ -996,6 +1006,8 @@ jelly/utils/shader.h
 jelly/system/inputmanager.h
 -
 jelly/system/window.h
+-
+jelly/graphics/light.h
 -
 jelly/graphics/renderers/renderer.h
 -

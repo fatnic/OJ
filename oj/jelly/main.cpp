@@ -5,6 +5,7 @@
 #include <jelly/utils/shader.h>
 #include <jelly/system/inputmanager.h>
 #include <jelly/system/window.h>
+#include <jelly/graphics/light.h>
 #include <jelly/graphics/renderers/renderer.h>
 
 int main()
@@ -14,12 +15,16 @@ int main()
     Renderer renderer(&window, &camera);
     InputManager input(&window, &camera);
 
-    Shader basic("assets/basic.vert", "assets/basic.frag");
-    ModelGenerator powergirl("powergirl", &basic);
+    Shader basic("assets/shaders/basic.vert", "assets/shaders/basic.frag");
 
-    renderer.addModel(powergirl.model);
+    Light lg(glm::vec4(2.0f, 5.0f, 2.0f, 1.0f));
+    renderer.addLight(&lg);
+
+    ModelGenerator astro("astronaut", &basic);
+    renderer.addModel(astro.model);
 
     while(!window.closed()) {
+        astro.model->mesh->rotate(1.0f, 0.0f, 1.0f, 0.0f);
         input.update();
         renderer.draw();
     }
