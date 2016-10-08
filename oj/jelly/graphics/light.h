@@ -6,10 +6,15 @@ class Light
 {
 private:
 public:
-    glm::vec4 position;
+    glm::vec3 position;
+
     glm::vec3 ambient;
     glm::vec3 diffuse;
     glm::vec3 specular;
 
-    Light(glm::vec4 pos);
+    float constant;
+    float linear;
+    float quadratic;
+
+    Light(glm::vec3 pos);
 };

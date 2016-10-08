@@ -78,50 +78,50 @@ void Shader::use()
     glUseProgram(this->program);
 }
 
-GLint Shader::getUniform(const char* uniform)
+GLint Shader::getUniform(std::string uniform)
 {
-    return glGetUniformLocation(program, uniform);
+    return glGetUniformLocation(program, uniform.c_str());
 }
 
-void Shader::setUniform(const char* name, GLfloat x, GLfloat y, GLfloat z)
+void Shader::setUniform(std::string name, GLfloat x, GLfloat y, GLfloat z)
 {
     this->use();
-    GLint uniformLocation = glGetUniformLocation(this->program, name);
+    GLint uniformLocation = glGetUniformLocation(this->program, name.c_str());
     glUniform3f(uniformLocation, x, y, z);
 }
 
-void Shader::setUniform(const char* name, glm::vec3 value)
+void Shader::setUniform(std::string name, glm::vec3 value)
 {
     this->use();
-    GLint uniformLocation = glGetUniformLocation(this->program, name);
+    GLint uniformLocation = glGetUniformLocation(this->program, name.c_str());
     glUniform3f(uniformLocation, value.x, value.y, value.z);
 }
 
-void Shader::setUniform(const char* name, glm::vec4 value)
+void Shader::setUniform(std::string name, glm::vec4 value)
 {
     this->use();
-    GLint uniformLocation = glGetUniformLocation(this->program, name);
+    GLint uniformLocation = glGetUniformLocation(this->program, name.c_str());
     glUniform4f(uniformLocation, value.x, value.y, value.z, value.w);
 }
 
 
-void Shader::setUniform(const char* name, GLfloat value)
+void Shader::setUniform(std::string name, GLfloat value)
 {
     this->use();
-    GLint uniformLocation = glGetUniformLocation(this->program, name);
+    GLint uniformLocation = glGetUniformLocation(this->program, name.c_str());
     glUniform1f(uniformLocation, value);
 }
 
-void Shader::setUniform(const char* name, int value)
+void Shader::setUniform(std::string name, int value)
 {
     this->use();
-    GLint uniformLocation = glGetUniformLocation(this->program, name);
+    GLint uniformLocation = glGetUniformLocation(this->program, name.c_str());
     glUniform1i(uniformLocation, value);
 }
 
-void Shader::setUniform(const char* name, glm::mat4* value)
+void Shader::setUniform(std::string name, glm::mat4* value)
 {
     this->use();
-    GLint uniformLocation = glGetUniformLocation(this->program, name);
+    GLint uniformLocation = glGetUniformLocation(this->program, name.c_str());
     glUniformMatrix4fv(uniformLocation, 1, GL_FALSE, glm::value_ptr(*value));
 }

@@ -13,9 +13,14 @@ void Renderer::addModel(Model *model)
     _models.push_back(model);
 }
 
-void Renderer::addLight(Light *light)
+void Renderer::addPointLight(Light *light)
 {
-    _lights.push_back(light);
+    _pointLights.push_back(light);
+}
+
+void Renderer::addDirectionLight(Light *light)
+{
+    directionalLight = light;
 }
 
 void Renderer::draw()
@@ -26,12 +31,24 @@ void Renderer::draw()
 
     for (Model* model : _models)
     {
-        for(int i = 0; i < _lights.size(); i++)
+        if(directionalLight != nullptr)
         {
-            model->shader->setUniform("light.position", _lights[i]->position);
-            model->shader->setUniform("light.ambient",  _lights[i]->ambient);
-            model->shader->setUniform("light.diffuse",  _lights[i]->diffuse);
-            model->shader->setUniform("light.specular", _lights[i]->specular);
+            model->shader->setUniform("dirLight.direction", directionalLight->position);
+            model->shader->setUniform("dirLight.ambient",   directionalLight->ambient);
+            model->shader->setUniform("dirLight.diffuse",   directionalLight->diffuse);
+            model->shader->setUniform("dirLight.specular",  directionalLight->specular);
+        }
+
+        for(int i = 0; i < _pointLights.size(); i++)
+        {
+            std::string num = std::to_string(i);
+            model->shader->setUniform("pointLights[" + num + "].position",  _pointLights[i]->position);
+            model->shader->setUniform("pointLights[" + num + "].ambient",   _pointLights[i]->ambient);
+            model->shader->setUniform("pointLights[" + num + "].diffuse",   _pointLights[i]->diffuse);
+            model->shader->setUniform("pointLights[" + num + "].specular",  _pointLights[i]->specular);
+            model->shader->setUniform("pointLights[" + num + "].constant",  _pointLights[i]->constant);
+            model->shader->setUniform("pointLights[" + num + "].linear",    _pointLights[i]->linear);
+            model->shader->setUniform("pointLights[" + num + "].quadratic", _pointLights[i]->quadratic);
         }
 
         model->shader->setUniform("projection", &_projection);

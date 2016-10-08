@@ -16,10 +16,12 @@ private:
     glm::mat4 _view;
 
     std::vector<Model*> _models;
-    std::vector<Light*> _lights;
+    Light* directionalLight;
+    std::vector<Light*> _pointLights;
 public:
     Renderer(Window* window, Camera* camera);
     void addModel(Model* model);
-    void addLight(Light* light);
+    void addDirectionLight(Light* light);
+    void addPointLight(Light* light);
     void draw();
 };
