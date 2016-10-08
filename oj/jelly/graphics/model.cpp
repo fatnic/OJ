@@ -26,5 +26,8 @@ void Model::draw()
     shader->setUniform("material.specular", 1);
     textures[1]->bind(1);
 
+    shader->setUniform("material.emission", 2);
+    textures[2]->bind(2);
+
     mesh->draw();
 }

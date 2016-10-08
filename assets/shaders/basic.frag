@@ -7,6 +7,7 @@ in vec3 fragPosition;
 struct Material {
   sampler2D diffuse;
   sampler2D specular;
+  sampler2D emission;
   float shininess;
 };
 
@@ -49,7 +50,9 @@ void main()
       if(pointLights[i].diffuse != vec3(0.0, 0.0, 0.0))
            result += CalcPointLight(pointLights[i], norm, fragPosition, viewDir);
 
-    color = vec4(result, 1.0f);
+    vec3 emission = vec3(texture(material.emission, TexCoords));
+
+    color = vec4(result + emission, 1.0f);
 }
 
 vec3 calcDirLight(DirLight light, vec3 normal, vec3 viewDir)

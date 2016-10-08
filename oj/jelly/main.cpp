@@ -21,8 +21,9 @@ int main()
     dir.diffuse = glm::vec3(0.5f);
     renderer.addDirectionLight(&dir);
 
-    Light lg(glm::vec3(8.0f, 10.0f, 4.0f));
-    renderer.addPointLight(&lg);
+    Light pl(glm::vec3(-5.0f, 5.0f, -2.0f));
+    pl.diffuse = glm::vec3(1.0f, 0.0f, 0.0f);
+    renderer.addPointLight(&pl);
 
     ModelGenerator astro("astronaut", &basic);
     renderer.addModel(astro.model);
