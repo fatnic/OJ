@@ -151,6 +151,12 @@
       <Unit filename="/home/dave/Projects/OJ/oj/jelly/utils/camera.h">
          <Option target="app"/>
       </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/utils/generators/modelgenerator.cpp">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/utils/generators/modelgenerator.h">
+         <Option target="app"/>
+      </Unit>
       <Unit filename="/home/dave/Projects/OJ/oj/jelly/utils/objloader.cpp">
          <Option target="app"/>
       </Unit>

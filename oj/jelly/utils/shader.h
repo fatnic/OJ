@@ -14,7 +14,7 @@ class Shader {
 public:
     GLuint program;
 
-    Shader(const GLchar* vertexPath, const GLchar* fragmentPath);
+    Shader(std::string vertexPath, std::string fragmentPath);
 
     void use();
     GLint getUniform(const char* uniform);

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/app.dir/oj/jelly/utils/objloader.cpp.o"
+  "CMakeFiles/app.dir/oj/jelly/utils/generators/modelgenerator.cpp.o"
   "CMakeFiles/app.dir/oj/jelly/utils/shader.cpp.o"
   "CMakeFiles/app.dir/oj/jelly/utils/transform.cpp.o"
   "CMakeFiles/app.dir/oj/jelly/utils/camera.cpp.o"

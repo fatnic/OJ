@@ -1,15 +1,11 @@
 #define STB_IMAGE_IMPLEMENTATION
 
-#include <jelly/system/window.h>
 #include <jelly/utils/camera.h>
+#include <jelly/utils/generators/modelgenerator.h>
 #include <jelly/utils/shader.h>
 #include <jelly/system/inputmanager.h>
+#include <jelly/system/window.h>
 #include <jelly/graphics/renderers/renderer.h>
-
-#include <jelly/graphics/texture/texture2d.h>
-#include <jelly/graphics/mesh.h>
-#include <jelly/utils/objloader.h>
-#include <jelly/graphics/model.h>
 
 int main()
 {
@@ -19,12 +15,9 @@ int main()
     InputManager input(&window, &camera);
 
     Shader basic("assets/basic.vert", "assets/basic.frag");
-    Texture2D tex("assets/textures/powergirl.tga");
-    OBJLoader obj("assets/objects/powergirl.obj");
-    Mesh mesh(obj.data);
-    Model powergirl(&mesh, &tex, &basic);
+    ModelGenerator powergirl("powergirl", &basic);
 
-    renderer.addModel(&powergirl);
+    renderer.addModel(powergirl.model);
 
     while(!window.closed()) {
         input.update();

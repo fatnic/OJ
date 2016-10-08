@@ -1,6 +1,6 @@
 #include <jelly/utils/objloader.h>
 
-OBJLoader::OBJLoader(const char* filename) {
+OBJLoader::OBJLoader(std::string filename) {
 
   std::ifstream file(filename);
 

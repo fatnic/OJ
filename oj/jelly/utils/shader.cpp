@@ -1,6 +1,6 @@
 #include <jelly/utils/shader.h>
 
-Shader::Shader(const GLchar* vertexPath, const GLchar* fragmentPath) {
+Shader::Shader(std::string vertexPath, std::string fragmentPath) {
 
     std::string	vertexCode;
     std::string fragmentCode;

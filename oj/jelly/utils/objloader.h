@@ -14,7 +14,7 @@ public:
     std::vector<float> data;
     float memSize;
 
-    OBJLoader(const char* filename);
+    OBJLoader(std::string filename);
 
 private:
     std::vector<glm::vec3> _vertices;

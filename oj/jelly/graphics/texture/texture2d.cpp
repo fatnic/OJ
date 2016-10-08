@@ -1,10 +1,10 @@
 #include <jelly/graphics/texture/texture2d.h>
 
-Texture2D::Texture2D(const char* filename)
+Texture2D::Texture2D(std::string filename)
   : id()
 {
   int width, height, c;
-  unsigned char* texImage = stbi_load(filename, &width, &height, &c, STBI_rgb);
+  unsigned char* texImage = stbi_load(filename.c_str(), &width, &height, &c, STBI_rgb);
 
   glGenTextures(1, &id);
   glBindTexture(GL_TEXTURE_2D, id);
@@ -23,11 +23,5 @@ Texture2D::Texture2D(const char* filename)
 void Texture2D::bind()
 {
   glBindTexture(GL_TEXTURE_2D, id);
-}
-
-void Texture2D::setReflectivity(float _specular, float _reflectivity)
-{
-  specularStrength = _specular;
-  reflectifity = _reflectivity;
 }
 

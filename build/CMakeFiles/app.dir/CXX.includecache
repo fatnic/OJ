@@ -827,9 +827,13 @@ jelly/utils/transform.h
 -
 
 ../oj/jelly/graphics/model.h
+string
+-
 jelly/graphics/mesh.h
 -
 jelly/graphics/texture/texture2d.h
+-
+jelly/utils/objloader.h
 -
 jelly/utils/shader.h
 -
@@ -845,6 +849,8 @@ jelly/graphics/model.h
 -
 
 ../oj/jelly/graphics/texture/texture2d.h
+string
+-
 GL/glew.h
 -
 stb_image.h
@@ -880,6 +886,14 @@ GL/glew.h
 glm/glm.hpp
 -
 glm/gtc/matrix_transform.hpp
+-
+
+../oj/jelly/utils/generators/modelgenerator.h
+string
+-
+jelly/graphics/model.h
+-
+jelly/utils/shader.h
 -
 
 ../oj/jelly/utils/objloader.h
@@ -991,6 +1005,8 @@ jelly/utils/objloader.h
 -
 jelly/graphics/model.h
 -
+jelly/utils/generators/modelgenerator.h
+-
 
 /home/dave/Projects/OJ/oj/jelly/system/inputmanager.cpp
 jelly/system/inputmanager.h
@@ -1002,6 +1018,10 @@ jelly/system/window.h
 
 /home/dave/Projects/OJ/oj/jelly/utils/camera.cpp
 jelly/utils/camera.h
+-
+
+/home/dave/Projects/OJ/oj/jelly/utils/generators/modelgenerator.cpp
+jelly/utils/generators/modelgenerator.h
 -
 
 /home/dave/Projects/OJ/oj/jelly/utils/objloader.cpp

@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/dave/Projects/OJ/oj/jelly/system/inputmanager.cpp" "/home/dave/Projects/OJ/build/CMakeFiles/app.dir/oj/jelly/system/inputmanager.cpp.o"
   "/home/dave/Projects/OJ/oj/jelly/system/window.cpp" "/home/dave/Projects/OJ/build/CMakeFiles/app.dir/oj/jelly/system/window.cpp.o"
   "/home/dave/Projects/OJ/oj/jelly/utils/camera.cpp" "/home/dave/Projects/OJ/build/CMakeFiles/app.dir/oj/jelly/utils/camera.cpp.o"
+  "/home/dave/Projects/OJ/oj/jelly/utils/generators/modelgenerator.cpp" "/home/dave/Projects/OJ/build/CMakeFiles/app.dir/oj/jelly/utils/generators/modelgenerator.cpp.o"
   "/home/dave/Projects/OJ/oj/jelly/utils/objloader.cpp" "/home/dave/Projects/OJ/build/CMakeFiles/app.dir/oj/jelly/utils/objloader.cpp.o"
   "/home/dave/Projects/OJ/oj/jelly/utils/shader.cpp" "/home/dave/Projects/OJ/build/CMakeFiles/app.dir/oj/jelly/utils/shader.cpp.o"
   "/home/dave/Projects/OJ/oj/jelly/utils/transform.cpp" "/home/dave/Projects/OJ/build/CMakeFiles/app.dir/oj/jelly/utils/transform.cpp.o"
