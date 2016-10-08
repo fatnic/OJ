@@ -14,7 +14,8 @@ public:
     Model(std::string obj, std::string tex, std::string shaderVert, std::string shaderFrag);
     void draw();
 
+    std::vector<Texture2D*> textures;
     Mesh* mesh;
-    Texture2D* texture;
+//    Texture2D* texture;
     Shader* shader;
 };

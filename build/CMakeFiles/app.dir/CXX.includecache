@@ -987,25 +987,17 @@ jelly/graphics/vertexarray.h
 /home/dave/Projects/OJ/oj/jelly/graphics/jelly/graphics/vertexarray.h
 
 /home/dave/Projects/OJ/oj/jelly/main.cpp
-jelly/system/window.h
--
 jelly/utils/camera.h
+-
+jelly/utils/generators/modelgenerator.h
 -
 jelly/utils/shader.h
 -
 jelly/system/inputmanager.h
 -
+jelly/system/window.h
+-
 jelly/graphics/renderers/renderer.h
--
-jelly/graphics/texture/texture2d.h
--
-jelly/graphics/mesh.h
--
-jelly/utils/objloader.h
--
-jelly/graphics/model.h
--
-jelly/utils/generators/modelgenerator.h
 -
 
 /home/dave/Projects/OJ/oj/jelly/system/inputmanager.cpp
