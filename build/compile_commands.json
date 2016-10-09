@@ -1,6 +1,11 @@
 [
 {
   "directory": "/home/dave/Projects/OJ/build",
+  "command": "/usr/bin/c++    -I/home/dave/Projects/OJ/oj -I/home/dave/Projects/OJ/ext   -std=c++11 -g   -o CMakeFiles/app.dir/oj/jelly/utils/lightloader.cpp.o -c /home/dave/Projects/OJ/oj/jelly/utils/lightloader.cpp",
+  "file": "/home/dave/Projects/OJ/oj/jelly/utils/lightloader.cpp"
+},
+{
+  "directory": "/home/dave/Projects/OJ/build",
   "command": "/usr/bin/c++    -I/home/dave/Projects/OJ/oj -I/home/dave/Projects/OJ/ext   -std=c++11 -g   -o CMakeFiles/app.dir/oj/jelly/utils/objloader.cpp.o -c /home/dave/Projects/OJ/oj/jelly/utils/objloader.cpp",
   "file": "/home/dave/Projects/OJ/oj/jelly/utils/objloader.cpp"
 },
@@ -58,6 +63,11 @@
   "directory": "/home/dave/Projects/OJ/build",
   "command": "/usr/bin/c++    -I/home/dave/Projects/OJ/oj -I/home/dave/Projects/OJ/ext   -std=c++11 -g   -o CMakeFiles/app.dir/oj/jelly/graphics/renderers/renderer.cpp.o -c /home/dave/Projects/OJ/oj/jelly/graphics/renderers/renderer.cpp",
   "file": "/home/dave/Projects/OJ/oj/jelly/graphics/renderers/renderer.cpp"
+},
+{
+  "directory": "/home/dave/Projects/OJ/build",
+  "command": "/usr/bin/c++    -I/home/dave/Projects/OJ/oj -I/home/dave/Projects/OJ/ext   -std=c++11 -g   -o CMakeFiles/app.dir/oj/jelly/graphics/terrain.cpp.o -c /home/dave/Projects/OJ/oj/jelly/graphics/terrain.cpp",
+  "file": "/home/dave/Projects/OJ/oj/jelly/graphics/terrain.cpp"
 },
 {
   "directory": "/home/dave/Projects/OJ/build",

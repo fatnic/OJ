@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/app.dir/oj/jelly/utils/lightloader.cpp.o"
   "CMakeFiles/app.dir/oj/jelly/utils/objloader.cpp.o"
   "CMakeFiles/app.dir/oj/jelly/utils/generators/modelgenerator.cpp.o"
   "CMakeFiles/app.dir/oj/jelly/utils/shader.cpp.o"
@@ -11,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/app.dir/oj/jelly/graphics/vertexarray.cpp.o"
   "CMakeFiles/app.dir/oj/jelly/graphics/model.cpp.o"
   "CMakeFiles/app.dir/oj/jelly/graphics/renderers/renderer.cpp.o"
+  "CMakeFiles/app.dir/oj/jelly/graphics/terrain.cpp.o"
   "CMakeFiles/app.dir/oj/jelly/graphics/texture/texture2d.cpp.o"
   "CMakeFiles/app.dir/oj/jelly/system/window.cpp.o"
   "CMakeFiles/app.dir/oj/jelly/system/inputmanager.cpp.o"

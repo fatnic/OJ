@@ -7,8 +7,8 @@ Light::Light(glm::vec3 pos)
     diffuse  = glm::vec3(1.0f, 1.0f, 1.0f);
     specular = glm::vec3(0.5f, 0.5f, 0.5f);
 
-    constant = 1.0f;
-    linear = 0.09f;
+    constant  = 1.0f;
+    linear    = 0.09f;
     quadratic = 0.032f;
 }
 

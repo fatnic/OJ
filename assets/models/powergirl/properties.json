@@ -1,0 +1,11 @@
+{
+  "mesh" : "mesh.obj",
+  "textures" : [
+    {"specular" : "specular.jpg"},
+    {"diffuse" : "diffuse.jpg"},
+    {"emission" : "emission.jpg"},
+  ],
+  "texture-properties" : [
+    {"shininess":25.0},
+  ]
+}

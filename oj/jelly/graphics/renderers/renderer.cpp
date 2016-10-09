@@ -26,8 +26,7 @@ void Renderer::addDirectionLight(Light *light)
 void Renderer::draw()
 {
     _view = _camera->getView();
-
-    _window->clear(0.2f, 0.2f, 0.2f, 1.0f);
+    _window->clear(0.01f, 0.01f, 0.01f, 1.0f);
 
     for (Model* model : _models)
     {

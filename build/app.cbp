@@ -124,6 +124,12 @@
       <Unit filename="/home/dave/Projects/OJ/oj/jelly/graphics/renderers/renderer.h">
          <Option target="app"/>
       </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/graphics/terrain.cpp">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/graphics/terrain.h">
+         <Option target="app"/>
+      </Unit>
       <Unit filename="/home/dave/Projects/OJ/oj/jelly/graphics/texture/texture2d.cpp">
          <Option target="app"/>
       </Unit>
@@ -161,6 +167,12 @@
          <Option target="app"/>
       </Unit>
       <Unit filename="/home/dave/Projects/OJ/oj/jelly/utils/generators/modelgenerator.h">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/utils/lightloader.cpp">
+         <Option target="app"/>
+      </Unit>
+      <Unit filename="/home/dave/Projects/OJ/oj/jelly/utils/lightloader.h">
          <Option target="app"/>
       </Unit>
       <Unit filename="/home/dave/Projects/OJ/oj/jelly/utils/objloader.cpp">

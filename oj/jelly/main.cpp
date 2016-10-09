@@ -7,6 +7,7 @@
 #include <jelly/system/window.h>
 #include <jelly/graphics/light.h>
 #include <jelly/graphics/renderers/renderer.h>
+#include <jelly/utils/lightloader.h>
 
 int main()
 {
@@ -17,19 +18,24 @@ int main()
 
     Shader basic("assets/shaders/basic.vert", "assets/shaders/basic.frag");
 
-    Light dir(glm::vec3(10.0f, 10.0f, 10.0f));
-    dir.diffuse = glm::vec3(0.5f);
-    renderer.addDirectionLight(&dir);
+    LightLoader::loadLights("assets/settings/lights.json", &renderer);
 
-    Light pl(glm::vec3(-5.0f, 5.0f, -2.0f));
-    pl.diffuse = glm::vec3(1.0f, 0.0f, 0.0f);
-    renderer.addPointLight(&pl);
+    ModelGenerator terrain("plane", &basic);
+    renderer.addModel(terrain.model);
 
     ModelGenerator astro("astronaut", &basic);
     renderer.addModel(astro.model);
 
+    ModelGenerator powergirl("powergirl", &basic);
+    powergirl.model->mesh->translate(-3.0f, 0.0f, 0.0f);
+    renderer.addModel(powergirl.model);
+
+    ModelGenerator dancer("dancer", &basic);
+    dancer.model->mesh->translate(3.0f, 0.0f, 0.0f);
+    dancer.model->mesh->scale(0.75f);
+    renderer.addModel(dancer.model);
+
     while(!window.closed()) {
-        astro.model->mesh->rotate(1.0f, 0.0f, 1.0f, 0.0f);
         input.update();
         renderer.draw();
     }
