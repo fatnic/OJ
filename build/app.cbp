@@ -49,6 +49,7 @@
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/5" />
             <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/lua5.3" />
             <Add directory="/usr/include/x86_64-linux-gnu" />
             <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
             <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
@@ -74,6 +75,7 @@
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/5" />
             <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/lua5.3" />
             <Add directory="/usr/include/x86_64-linux-gnu" />
             <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
             <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />

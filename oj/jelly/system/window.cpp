@@ -2,10 +2,10 @@
 
 void windowResize(GLFWwindow* window, int width, int height);
 void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods);
-void mouseButtonCallback(GLFWwindow * window, int button, int action, int mods);
-void cursorPositionCallback(GLFWwindow * window, double xpos, double ypos);
+void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods);
+void cursorPositionCallback(GLFWwindow* window, double xpos, double ypos);
 
-Window::Window(const char * title, int width, int height)
+Window::Window(const char* title, int width, int height)
 {
   _title = title;
   _width = width;
@@ -42,7 +42,7 @@ bool Window::init()
   glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
   glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 
-  glfwWindowHint(GLFW_SAMPLES, 4);
+  //glfwWindowHint(GLFW_SAMPLES, 4);
 
   _window = glfwCreateWindow(_width, _height, _title, nullptr, nullptr);
   aspectRatio = (float)_width / (float)_height;
@@ -135,7 +135,7 @@ bool Window::isMouseButtonPressed(unsigned int button) const
 
 void windowResize(GLFWwindow* window, int width, int height)
 {
-  Window* win = (Window*)glfwGetWindowUserPointer(window);
+  Window *win = (Window*)glfwGetWindowUserPointer(window);
   win->_width = width;
   win->_height = height;
   win->aspectRatio = (float)width / (float)height;
@@ -159,18 +159,18 @@ void Window::enableCursor()
 
 void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
-  Window* win = (Window*) glfwGetWindowUserPointer(window);
+  Window *win = (Window*) glfwGetWindowUserPointer(window);
   win->_keys[key] = action != GLFW_RELEASE;
 }
 
-void mouseButtonCallback(GLFWwindow * window, int button, int action, int mods)
+void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods)
 {
-  Window* win = (Window*)glfwGetWindowUserPointer(window);
+  Window *win = (Window*)glfwGetWindowUserPointer(window);
   win->_buttons[button] = action != GLFW_RELEASE;
 }
-void cursorPositionCallback(GLFWwindow * window, double xpos, double ypos)
+void cursorPositionCallback(GLFWwindow* window, double xpos, double ypos)
 {
-  Window* win = (Window*)glfwGetWindowUserPointer(window);
+  Window *win = (Window*)glfwGetWindowUserPointer(window);
   win->_mousePos.x = xpos;
   win->_mousePos.y = ypos;
   win->_mouseMoved = true;
@@ -180,5 +180,3 @@ bool Window::hasMouseMoved() const
 {
   return _mouseMoved;
 }
-
-

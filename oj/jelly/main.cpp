@@ -18,7 +18,7 @@ int main()
 
     Shader basic("assets/shaders/basic.vert", "assets/shaders/basic.frag");
 
-    LightLoader::loadLights("assets/settings/lights.json", &renderer);
+    LightLoader::loadLights("assets/settings/lights.lua", &renderer);
 
     ModelGenerator terrain("plane", &basic);
     renderer.addModel(terrain.model);
@@ -32,7 +32,7 @@ int main()
 
     ModelGenerator dancer("dancer", &basic);
     dancer.model->mesh->translate(3.0f, 0.0f, 0.0f);
-    dancer.model->mesh->scale(0.75f);
+    dancer.model->mesh->scale(glm::vec3(0.7f));
     renderer.addModel(dancer.model);
 
     while(!window.closed()) {

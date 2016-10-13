@@ -7,32 +7,41 @@ LightLoader::LightLoader()
 
 void LightLoader::loadLights(std::string filename, Renderer* renderer)
 {
-    std::fstream file(filename);
-    std::string stringbuff(std::istreambuf_iterator<char>(file), {});
-    auto j = json::parse(stringbuff);
+    sol::state lua;
+    lua.script_file(filename);
 
-    auto d = j["directional"];
+    sol::table d = lua["lighting"]["directional"];
 
-    Light* directional = new Light(glm::vec3(d["position"][0].get<float>(), d["position"][1].get<float>(), d["position"][2].get<float>()));
-    directional->ambient = glm::vec3(d["ambient"][0].get<float>(), d["ambient"][1].get<float>(), d["ambient"][2].get<float>());
-    directional->diffuse = glm::vec3(d["diffuse"][0].get<float>(), d["diffuse"][1].get<float>(), d["diffuse"][2].get<float>());
-    directional->specular = glm::vec3(d["specular"][0].get<float>(), d["specular"][1].get<float>(), d["specular"][2].get<float>());
+    Light *directional = new Light(lua2xyz(d["position"]));
+    directional->ambient = lua2rgb(d["ambient"]);
+    directional->diffuse = lua2rgb(d["diffuse"]);
+    directional->specular= lua2rgb(d["specular"]);
 
-    if(d["active"].get<bool>() == true)
+    if(d["active"])
         renderer->addDirectionLight(directional);
 
-    auto points = j["point"];
-    for(auto& p : points)
-    {
-        Light* point = new Light(glm::vec3(p["position"][0].get<float>(), p["position"][1].get<float>(), p["position"][2].get<float>()));
+    sol::table points = lua["lighting"]["pointlights"];
+    points.for_each([&](std::pair<sol::object, sol::object> pair){
+       sol::table p = pair.second;
+       Light *point     = new Light(lua2xyz(p["position"]));
+       point->ambient   = lua2rgb(p["ambient"]);
+       point->diffuse   = lua2rgb(p["diffuse"]);
+       point->specular  = lua2rgb(p["specular"]);
+       point->constant  = p.get<float>("constant");
+       point->linear    = p.get<float>("linear");
+       point->quadratic = p.get<float>("quadratic");
 
-        point->ambient = glm::vec3(p["ambient"][0].get<float>(), p["ambient"][1].get<float>(), p["ambient"][2].get<float>());
-        point->diffuse = glm::vec3(p["diffuse"][0].get<float>(), p["diffuse"][1].get<float>(), p["diffuse"][2].get<float>());
-        point->specular = glm::vec3(p["specular"][0].get<float>(), p["specular"][1].get<float>(), p["specular"][2].get<float>());
-        point->constant = p["constant"].get<float>();
-        point->linear = p["linear"].get<float>();
-        point->quadratic = p["quadratic"].get<float>();
+       if(p["active"])
+          renderer->addPointLight(point);
+    });
+}
 
-        renderer->addPointLight(point);
-    }
+glm::vec3 LightLoader::lua2xyz(sol::table vec)
+{
+    return glm::vec3(vec.get<float>("x"), vec.get<float>("y"), vec.get<float>("z"));
+}
+
+glm::vec3 LightLoader::lua2rgb(sol::table vec)
+{
+    return glm::vec3(vec.get<float>("r"), vec.get<float>("g"), vec.get<float>("b"));
 }
